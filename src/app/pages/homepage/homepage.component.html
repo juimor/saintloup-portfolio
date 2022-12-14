@@ -1,0 +1,23 @@
+<div fxLayout="row">
+  <div class="homepage--container">
+    <div style="position: absolute">
+      <img src="../../../assets/344.gif" />
+    </div>
+    <div class="homepage--title">
+      <span><a>344</a></span>
+    </div>
+
+    <div class="homepage--menu">
+      <div
+        class="homepage--menu-links"
+        fxLayout="column"
+        fxLayoutAlign="end start"
+        fxLayoutGap="80px"
+      >
+        <span *ngFor="let item of homepageMenuItems">
+          <a href="{{ item.link }}">{{ item.label }}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

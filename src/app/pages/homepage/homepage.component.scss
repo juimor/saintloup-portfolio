@@ -1,0 +1,48 @@
+.homepage--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+        width: 360px;
+    }
+    span {
+        position: absolute;
+        width: max-content;
+    }
+    
+}
+
+.homepage--title {
+    font-size: 700%;    
+    color:white;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage--title:hover {
+    color:red;
+}
+
+.homepage--menu {
+    position: absolute;
+    left: 200px;
+    top:275px;
+}
+
+.homepage--menu-links {
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color:red !important;
+    }
+    a:visited {
+        color:black;
+    }
+}
