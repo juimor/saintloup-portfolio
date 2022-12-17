@@ -8,5 +8,9 @@ import {projectsMenuItems} from 'src/app/constants/Constants';
 })
 export class PersonalProjectsComponent {
   projectsMenuItems = projectsMenuItems;
+  backgroundTitle: string;
 
+  changeBackgroundTitle(title: string) {
+    this.backgroundTitle = title;
+  }
 }

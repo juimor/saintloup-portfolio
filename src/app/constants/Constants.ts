@@ -6,12 +6,11 @@ export const homepageMenuItems: MenuItem[] = [
 ];
 
 export const projectsMenuItems: MenuItem[] = [
-    { label: 'PERSONAL PROJECTS', link: '/PersonalProjects' },
-    { label: 'CONTACTS', link: '/Contacts' },
-    { label: 'CONTACTS', link: '/Contacts' },
-    { label: 'CONTACTS', link: '/Contacts' },
-    { label: 'CONTACTS', link: '/Contacts' },
-    { label: 'CONTACTS', link: '/Contacts' },
-    { label: 'CONTACTS', link: '/Contacts' },
-    { label: 'CONTACTS', link: '/Contacts' },
+    { label: 'PERSONAL PROJECTS', link: '/PersonalProjects', backgroundTitle: 'PersonalProjects'},
+    { label: 'CONTACTS', link: '/Contacts', backgroundTitle: 'logo.png' },
+    { label: 'CONTACTS', link: '/Contacts', backgroundTitle: 'st-loup-portfolio.png' },
+    { label: 'CONTACTS', link: '/Contacts', backgroundTitle: '' },
+    { label: 'CONTACTS', link: '/Contacts', backgroundTitle: '' },
+    { label: 'CONTACTS', link: '/Contacts', backgroundTitle: '' },
+    { label: 'CONTACTS', link: '/Contacts', backgroundTitle: '' },
 ];

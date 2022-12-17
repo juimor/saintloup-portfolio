@@ -1,4 +1,9 @@
-<div class="container" fxLayout="row" fxLayoutAlign="center stretch">
+<div 
+  class="container" 
+  fxLayout="row" 
+  fxLayoutAlign="center stretch" 
+  [ngStyle]="{'background': backgroundTitle != undefined ? 'url(../../../assets/' + backgroundTitle + ') no-repeat center;' : null}"
+  >
   <div fxLayout="column" fxFlex="10" fxLayoutAlign="space-between start">
     <span class="styled-link"><a href="/">BACK</a></span>
     <img src="../../../assets/st-loup-portfolio.jpg" />
@@ -6,6 +11,7 @@
 
   <div fxLayoutAlign="end" fxFlex="30">
     <app-menu
+      (backgroundTitleEvent)="changeBackgroundTitle($event)"
       [items]="projectsMenuItems"
       [reverse]="true"
       [hasHover]="true"
