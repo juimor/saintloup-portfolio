@@ -1,0 +1,24 @@
+.container {
+  padding: 0 48px;
+  width: max-content;
+}
+
+.menu-links {
+  height: 10%;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red !important;
+  }
+  a:visited {
+    color: black;
+  }
+}
+
+.growOnHover {
+  span:hover {
+    font-size: 30px;
+  }
+}

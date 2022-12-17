@@ -1,9 +1,11 @@
-const homepageMenuItems = [
+import { MenuItem } from "../models/menuItem.model";
+
+export const homepageMenuItems: MenuItem[] = [
     { label: 'PERSONAL PROJECTS', link: '/PersonalProjects' },
     { label: 'CONTACTS', link: '/Contacts' },
-]
+];
 
-const projectsMenuItems = [
+export const projectsMenuItems: MenuItem[] = [
     { label: 'PERSONAL PROJECTS', link: '/PersonalProjects' },
     { label: 'CONTACTS', link: '/Contacts' },
     { label: 'CONTACTS', link: '/Contacts' },
@@ -12,11 +14,4 @@ const projectsMenuItems = [
     { label: 'CONTACTS', link: '/Contacts' },
     { label: 'CONTACTS', link: '/Contacts' },
     { label: 'CONTACTS', link: '/Contacts' },
-]
-
-const Constants = {
-    homepageMenuItems,
-    projectsMenuItems
-};
-  
-export default Constants;
+];

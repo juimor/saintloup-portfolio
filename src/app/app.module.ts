@@ -7,15 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { MenuComponent } from './pages/menu/menu.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     MenuComponent,
-    ContactsComponent
+    ContactsComponent,
+    PersonalProjectsComponent
   ],
   imports: [
     BrowserModule,

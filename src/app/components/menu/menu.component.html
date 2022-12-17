@@ -1,0 +1,26 @@
+<div
+  class="container"
+  fxLayout="column"
+  fxLayoutAlign="center start"
+  [fxLayoutGap]="gap + 'px'"
+  *ngIf="!reverse"
+>
+  <span class="menu-links" *ngFor="let item of items">
+    <a href="{{ item.link }}">{{ item.label }}</a>
+  </span>
+</div>
+
+<div
+  class="container"
+  fxFlex
+  fxLayout="column"
+  fxLayoutAlign="center end"
+  [ngClass]="{ growOnHover: reverse }"
+  *ngIf="reverse"
+>
+  <span class="menu-links" *ngFor="let item of items">
+    <a href="{{ item.link }}">{{ item.label }}</a>
+  </span>
+</div>
+
+<!-- [fxLayoutGap]="gap + 'px'" -->

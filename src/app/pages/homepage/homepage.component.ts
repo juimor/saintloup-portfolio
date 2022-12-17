@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Constants from 'src/app/constants/Constants';
+import { homepageMenuItems } from 'src/app/constants/Constants';
 
 @Component({
   selector: 'app-homepage',
@@ -7,6 +7,6 @@ import Constants from 'src/app/constants/Constants';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
-  homepageMenuItems = Constants.homepageMenuItems;
+  homepageMenuItems = homepageMenuItems;
 
 }

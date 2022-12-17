@@ -1,0 +1,24 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center stretch">
+  <div fxLayout="column" fxFlex="10" fxLayoutAlign="space-between start">
+    <span class="styled-link"><a href="/">BACK</a></span>
+    <img src="../../../assets/st-loup-portfolio.jpg" />
+  </div>
+
+  <div fxLayoutAlign="end" fxFlex="30">
+    <app-menu
+      [items]="projectsMenuItems"
+      [reverse]="true"
+      [hasHover]="true"
+      [gap]="56"
+    ></app-menu>
+  </div>
+
+  <div fxFlex fxLayout="column" fxLayoutAlign="start end">
+    <span class="styled-link"><a href="/Contacts">CONTACT</a></span>
+    <span class="styled-link"
+      ><a href="https://www.instagram.com/4mbianss/" target="_blank"
+        >INSTAGRAM</a
+      ></span
+    >
+  </div>
+</div>
