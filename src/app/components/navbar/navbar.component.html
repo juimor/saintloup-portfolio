@@ -1,0 +1,10 @@
+<div
+  class="container"
+  fxLayout
+  fxLayoutAlign="space-between start"
+  fxLayoutGap="56"
+>
+  <span class="styled-link" *ngFor="let item of items">
+    <a href="{{ item.link }}">{{ item.label }}</a>
+  </span>
+</div>
