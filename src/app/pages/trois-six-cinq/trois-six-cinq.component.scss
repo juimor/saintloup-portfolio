@@ -1,0 +1,26 @@
+.container {
+  padding: 5% 5%;
+  height: 100%;
+}
+.app-navbar {
+  width: 100%;
+}
+
+.content--container {
+}
+
+.content--first-col,
+.content--second-col {
+  width: 100%;
+  img {
+    max-height: 350px;
+  }
+}
+
+.content--first-col-img {
+  padding-bottom: 24px;
+}
+
+.content--second-col-img {
+  padding-top: 24px;
+}

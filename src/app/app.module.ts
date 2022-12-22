@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MenuComponent,
     ContactsComponent,
     PersonalProjectsComponent,
-    NavbarComponent
+    NavbarComponent,
+    TroisSixCinqComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

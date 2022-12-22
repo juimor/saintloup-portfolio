@@ -18,9 +18,12 @@
   [ngClass]="{ growOnHover: reverse }"
   *ngIf="reverse"
 >
-  <span  class="menu-links" *ngFor="let item of items">
-    <a (mouseover)="onMouseOver(item)" (mouseout)="onMouseLeave()" href="{{ item.link }}">{{ item.label }}</a>
+  <span class="menu-links" *ngFor="let item of items">
+    <a
+      (mouseover)="onMouseOver(item)"
+      (mouseout)="onMouseLeave()"
+      href="{{ item.link }}"
+      >{{ item.label }}</a
+    >
   </span>
 </div>
-
-<!-- [fxLayoutGap]="gap + 'px'" -->
