@@ -1,27 +1,31 @@
 import { Component } from '@angular/core';
-import { projectsMenuItems, weekItems } from 'src/app/constants/Constants';
+import { navbar365Items } from 'src/app/constants/Constants';
 
 @Component({
   selector: 'app-trois-six-cinq',
   templateUrl: './trois-six-cinq.component.html',
-  styleUrls: ['./trois-six-cinq.component.scss']
+  styleUrls: ['./trois-six-cinq.component.scss'],
 })
 export class TroisSixCinqComponent {
-  projectsMenuItems = projectsMenuItems;
-  weekItems = weekItems;
-  backgroundTitle: string;
-  gridColumns = 4;
-  weekItemSelected: string = 'nothingSelected';
+  constructor() {}
 
-  ngOnInit () {
-    console.log(this.weekItems)
+  navbar365Items = navbar365Items;
+  backgroundTitle: string;
+  gridColumns = 2;
+  daySelected: string = 'nothingSelected';
+  weekItemSelected: any;
+
+  ngOnInit() {
+    console.log(this.navbar365Items);
   }
   changeBackgroundTitle(title: string) {
     this.backgroundTitle = title;
   }
 
   weekItemClickAction($event: string) {
-    this.weekItemSelected = $event.toLowerCase()
-    console.log(this.weekItemSelected)
+    this.daySelected = $event.toLowerCase();
+    this.weekItemSelected = navbar365Items.find(
+      (item) => item.label === this.daySelected.toUpperCase()
+    );
   }
 }

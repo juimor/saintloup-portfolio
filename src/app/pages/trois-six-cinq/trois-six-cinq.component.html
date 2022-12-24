@@ -21,44 +21,27 @@
       fxLayout="column"
       fxLayoutAlign="center center"
     >
-      <ng-container *ngIf="weekItemSelected != 'nothingSelected'">
+      <ng-container *ngIf="daySelected != 'nothingSelected'">
         <div
-          class="content--first-col"
+          class="content--img-container"
           fxLayoutGap="56px"
           fxLayoutAlign="space-evenly center"
           fxFlex
+          style="border: solid 1px black"
         >
-          <ng-container *ngFor="let dayItems of weekItems['mercredi']">
+          <ng-container *ngFor="let dayItem of weekItemSelected.items">
             <img
+              loading="lazy"
               class="content--first-col-img"
               [ngStyle]="{ 'max-width': '20%' }"
-              [src]="'../../../assets/' + dayItems.name"
-            />
-          </ng-container>
-        </div>
-        <div
-          fxFlex
-          class="content--second-col"
-          fxLayoutGap="56px"
-          fxLayoutAlign="space-evenly center"
-        >
-          <ng-container *ngFor="let dayItems of weekItems['mercredi']">
-            <img
-              class="content--second-col-img"
-              [ngStyle]="{ 'max-width': '20%' }"
-              [src]="'../../../assets/' + dayItems.name"
+              [src]="'../../../assets/' + dayItem.name"
             />
           </ng-container>
         </div>
       </ng-container>
-      <ng-container *ngIf="weekItemSelected === 'nothingSelected'">
-        <ng-container *ngFor="let dayItems of weekItems['nothingSelected']">
-          <img
-            class="content--first-col-img"
-            [ngStyle]="{ 'max-width': '20%' }"
-            [src]="'../../../assets/' + dayItems.name"
-          />
-        </ng-container>
+
+      <ng-container *ngIf="daySelected === 'nothingSelected'">
+        <img loading="lazy" src="'../../../assets/st-loup-portfolio.webp" />
       </ng-container>
     </div>
   </div>

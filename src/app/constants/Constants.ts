@@ -12,56 +12,64 @@ export const projectsMenuItems: MenuItem[] = [
     link: '/365',
     backgroundTitle: '365.webp',
   },
-  { label: 'SAMEDI', link: '/Contacts', backgroundTitle: 'logo.png' },
+  { label: 'SAMEDI', link: '', backgroundTitle: 'samedi.gif' },
   {
     label: 'PORSHE',
-    link: '/Contacts',
-    backgroundTitle: 'st-loup-portfolio.png',
+    link: '',
+    backgroundTitle: 'porshe.jpg',
   },
-  { label: 'CEBE', link: '/Contacts', backgroundTitle: '' },
-  { label: 'CONTACTS', link: '/Contacts', backgroundTitle: '' },
-  { label: 'PORTRAITS', link: '/Contacts', backgroundTitle: '' },
+  { label: 'CEBE', link: '', backgroundTitle: 'CEBE.jpg' },
+  { label: 'الظلال والأضواء', link: '', backgroundTitle: '' },
+  { label: 'PORTRAITS', link: '', backgroundTitle: 'portraits.jpg' },
 ];
 
-export const navbarItems: MenuItem[] = [
-  { label: 'LUNDI', link: '/Lundi' },
-  { label: 'MARDI', link: '/Mardi' },
-  { label: 'MERCREDI', link: '/Mercredi' },
-  { label: 'JEUDI', link: '/Jeudi' },
-  { label: 'VENDREDI', link: '/Vendredi' },
-];
-
-export const weekItems = 
+//synthetiser navbarItems et weekItems
+export const navbar365Items: MenuItem[] = [
   {
-    'nothingSelected': [
-      { name: 'st-loup-portfolio.jpg', type: 'paysage' },
-    ],
-    'lundi': [
+    label: 'LUNDI',
+    link: '/Lundi',
+    items: [
       { name: 'paysage.jpg', type: 'paysage' },
       { name: 'paysage.jpg', type: 'paysage' },
     ],
-    'mardi': [
+  },
+  {
+    label: 'MARDI',
+    link: '/Mardi',
+    items: [
       { name: 'paysage.jpg', type: 'paysage' },
       { name: 'paysage.jpg', type: 'paysage' },
+      { name: '344.gif', type: 'portrait' },
+      { name: 'paysage.jpg', type: 'paysage' },
     ],
-    'mercredi': [
+  },
+  {
+    label: 'MERCREDI',
+    link: '/Mercredi',
+    items: [
       { name: '344.gif', type: 'portrait' },
       { name: 'paysage.jpg', type: 'paysage' },
       { name: '344.gif', type: 'portrait' },
+    ],
+  },
+  {
+    label: 'JEUDI',
+    link: '/Jeudi',
+    items: [
+      { name: '344.gif', type: 'portrait' },
+      { name: '344.gif', type: 'portrait' },
+      { name: '344.gif', type: 'portrait' },
+      { name: '344.gif', type: 'portrait' },
+    ],
+  },
+  {
+    label: 'VENDREDI',
+    link: '/Vendredi',
+    items: [
+      { name: 'logo.png', type: 'paysage' },
+      { name: 'logo.png', type: 'paysage' },
+      { name: 'logo.png', type: 'paysage' },
       { name: 'logo.png', type: 'paysage' },
     ],
-    'jeudi': [
-      { name: '344.gif', type: 'portrait' },
-      { name: '344.gif', type: 'portrait' },
-      { name: '344.gif', type: 'portrait' },
-      { name: '344.gif', type: 'portrait' },
-    ],
-    'vendredi': [
-      { name: 'logo.png', type: 'paysage' },
-      { name: 'logo.png', type: 'paysage' },
-      { name: 'logo.png', type: 'paysage' },
-      { name: 'logo.png', type: 'paysage' },
-    ],
-  }
-;
-
+  },
+];

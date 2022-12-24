@@ -14,6 +14,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
+import { RouteErrorComponent } from './pages/route-error/route-error.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.com
     ContactsComponent,
     PersonalProjectsComponent,
     NavbarComponent,
-    TroisSixCinqComponent
+    TroisSixCinqComponent,
+    RouteErrorComponent
   ],
   imports: [
     BrowserModule,
