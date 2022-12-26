@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { navbar365Items } from 'src/app/constants/Constants';
+import { ImgItem } from 'src/app/models/imgItem.model';
 
 @Component({
   selector: 'app-trois-six-cinq',
@@ -10,7 +11,8 @@ export class TroisSixCinqComponent {
   constructor() {}
 
   navbar365Items = navbar365Items;
-  backgroundTitle: string;
+  backgroundImgUrl: string;
+  Style: string;
   gridColumns = 2;
   daySelected: string = 'nothingSelected';
   weekItemSelected: any;
@@ -18,8 +20,16 @@ export class TroisSixCinqComponent {
   ngOnInit() {
     console.log(this.navbar365Items);
   }
-  changeBackgroundTitle(title: string) {
-    this.backgroundTitle = title;
+
+  setBackgroundStyle(url: string) {
+    this.backgroundImgUrl = url;
+    if (this.backgroundImgUrl != undefined || this.Style === '') {
+      this.Style =
+        'background: url(../../../assets/' +
+        this.backgroundImgUrl +
+        ' ); background-repeat: no-repeat; background-position: center; background-size: 30%; ';
+    }
+    console.log(this.Style);
   }
 
   weekItemClickAction($event: string) {
@@ -27,5 +37,13 @@ export class TroisSixCinqComponent {
     this.weekItemSelected = navbar365Items.find(
       (item) => item.label === this.daySelected.toUpperCase()
     );
+  }
+
+  onMouseOver(item: ImgItem) {
+    this.setBackgroundStyle(item.url);
+  }
+
+  onMouseLeave() {
+    this.Style = '';
   }
 }

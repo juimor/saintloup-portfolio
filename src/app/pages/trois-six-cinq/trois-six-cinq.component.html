@@ -2,14 +2,9 @@
   class="container"
   fxLayout="row"
   fxLayoutAlign="center stretch"
-  [ngStyle]="{
-    background:
-      backgroundTitle != undefined
-        ? 'url(../../../assets/' + backgroundTitle + ') no-repeat center;'
-        : null
-  }"
+  [style]="Style"
 >
-  <div fxLayout="column" fxFlex="90">
+  <div fxLayout="column" fxLayoutAlign="center center" fxFlex="90">
     <app-navbar
       fxFlex="10"
       class="app-navbar"
@@ -25,24 +20,28 @@
         <div
           class="content--img-container"
           fxLayoutGap="56px"
-          fxLayoutAlign="space-evenly center"
+          fxLayoutAlign="center center"
+          fxLayout="row wrap"
           fxFlex
-          style="border: solid 1px black"
         >
           <ng-container *ngFor="let dayItem of weekItemSelected.items">
             <img
+              (mouseover)="onMouseOver(dayItem)"
+              (mouseout)="onMouseLeave()"
               loading="lazy"
               class="content--first-col-img"
-              [ngStyle]="{ 'max-width': '20%' }"
-              [src]="'../../../assets/' + dayItem.name"
+              [src]="'../../../assets/' + dayItem.url"
             />
           </ng-container>
         </div>
       </ng-container>
-
+      <div class="img-first-plan"></div>
       <ng-container *ngIf="daySelected === 'nothingSelected'">
         <img loading="lazy" src="'../../../assets/st-loup-portfolio.webp" />
       </ng-container>
     </div>
+    <span class="styled-link backbtn-container">
+      <a routerLink="/Work" routerLinkActive="active">BACK</a>
+    </span>
   </div>
 </div>

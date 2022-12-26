@@ -11,15 +11,26 @@
 
 .content--img-container {
   width: 100%;
+  padding-left: 56px;
   img {
-    max-height: 350px;
+    height: 75px;
   }
 }
 
 .content--first-col-img {
-  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .content--second-col-img {
   padding-top: 24px;
+}
+
+.backbtn-container {
+  padding-top: 24px;
+}
+
+.img-first-plan {
+  height: 50%;
+  position: relative;
+  z-index: 100;
 }
