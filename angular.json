@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "saintloup-portfolio": {
+    "portfolio-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/saintloup-portfolio",
+            "outputPath": "dist/portfolio-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "saintloup-portfolio:build:production"
+              "browserTarget": "portfolio-angular:build:production"
             },
             "development": {
-              "browserTarget": "saintloup-portfolio:build:development"
+              "browserTarget": "portfolio-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "saintloup-portfolio:build"
+            "browserTarget": "portfolio-angular:build"
           }
         },
         "test": {
