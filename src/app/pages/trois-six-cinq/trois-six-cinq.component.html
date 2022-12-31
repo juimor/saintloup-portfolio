@@ -35,10 +35,12 @@
           </ng-container>
         </div>
       </ng-container>
-      <div class="img-first-plan"></div>
-      <ng-container *ngIf="daySelected === 'nothingSelected'">
+      <div *ngIf="this.backgroundImgUrl != ''" class="img-first-plan">
+        <img loading="lazy" [src]="backgroundImgUrl" />
+      </div>
+      <!-- <ng-container *ngIf="daySelected === 'nothingSelected'">
         <img loading="lazy" src="'../../../assets/st-loup-portfolio.webp" />
-      </ng-container>
+      </ng-container> -->
     </div>
     <span class="styled-link backbtn-container">
       <a routerLink="/Work" routerLinkActive="active">BACK</a>

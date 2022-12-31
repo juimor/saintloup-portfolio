@@ -10,8 +10,9 @@ import { ImgItem } from 'src/app/models/imgItem.model';
 export class TroisSixCinqComponent {
   constructor() {}
 
+  test = document.getElementById('full-image');
   navbar365Items = navbar365Items;
-  backgroundImgUrl: string;
+  backgroundImgUrl: string = '';
   Style: string;
   gridColumns = 2;
   daySelected: string = 'nothingSelected';
@@ -21,15 +22,19 @@ export class TroisSixCinqComponent {
     console.log(this.navbar365Items);
   }
 
-  setBackgroundStyle(url: string) {
-    this.backgroundImgUrl = url;
-    if (this.backgroundImgUrl != undefined || this.Style === '') {
-      this.Style =
-        'background: url(../../../assets/' +
-        this.backgroundImgUrl +
-        ' ); background-repeat: no-repeat; background-position: center; background-size: 30%; ';
-    }
-    console.log(this.Style);
+  // setBackgroundStyle(url: string) {
+  //   this.backgroundImgUrl = url;
+  //   if (this.backgroundImgUrl != '' || this.Style === '') {
+  //     this.Style =
+  //       'background: url(../../../assets/' +
+  //       this.backgroundImgUrl +
+  //       ' ); background-repeat: no-repeat; background-position: center; background-size: 30%; ';
+  //   }
+  //   console.log(this.Style);
+  // }
+
+  displayImg(url: string) {
+    this.backgroundImgUrl = '../../../assets/' + url;
   }
 
   weekItemClickAction($event: string) {
@@ -40,10 +45,12 @@ export class TroisSixCinqComponent {
   }
 
   onMouseOver(item: ImgItem) {
-    this.setBackgroundStyle(item.url);
+    //this.setBackgroundStyle(item.url);
+    this.displayImg(item.url);
   }
 
   onMouseLeave() {
-    this.Style = '';
+    //this.Style = '';
+    this.backgroundImgUrl = '';
   }
 }

@@ -30,7 +30,8 @@
 }
 
 .img-first-plan {
-  height: 50%;
-  position: relative;
-  z-index: 100;
+  position: absolute;
+  img {
+    height: 500px;
+  }
 }
