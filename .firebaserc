@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "st-loup-portfolio"
+    "default": "saintloup-portfolio"
+  },
+  "targets": {
+    "saintloup-portfolio": {
+      "hosting": {
+        "saintloup-portfolio": [
+          "ambianss"
+        ]
+      }
+    }
   }
 }
