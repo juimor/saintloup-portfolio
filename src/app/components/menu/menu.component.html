@@ -22,7 +22,7 @@
     <a
       (mouseover)="onMouseOver(item)"
       (mouseout)="onMouseLeave()"
-      [routerLink]="item.link"
+      [routerLink]="'/work' + item.link"
       routerLinkActive="active"
       >{{ item.label }}</a
     >

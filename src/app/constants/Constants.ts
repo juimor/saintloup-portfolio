@@ -2,8 +2,8 @@ import { ImgItem } from '../models/imgItem.model';
 import { MenuItem } from '../models/menuItem.model';
 
 export const homepageMenuItems: MenuItem[] = [
-  { label: 'PERSONAL PROJECTS', link: '/Work' },
-  { label: 'CONTACTS', link: '/Contacts' },
+  { label: 'PERSONAL PROJECTS', link: '/work' },
+  { label: 'CONTACTS', link: '/contacts' },
 ];
 
 export const projectsMenuItems: MenuItem[] = [
@@ -12,19 +12,19 @@ export const projectsMenuItems: MenuItem[] = [
     link: '/365',
     backgroundTitle: '365v2.jpg',
   },
-  { label: 'SAMEDI', link: '', backgroundTitle: 'samedi.gif' },
+  { label: 'SAMEDI', link: '/samedi', backgroundTitle: 'samedi.gif' },
   {
     label: 'PORSCHE',
-    link: '',
+    link: '/porsche',
     backgroundTitle: 'porshe.jpg',
   },
-  { label: 'CEBE', link: '', backgroundTitle: 'CEBE.jpg' },
+  { label: 'CEBE', link: '/CEBE', backgroundTitle: 'CEBE.jpg' },
   {
     label: 'الظلال والأضواء',
-    link: '',
+    link: '/ombre-et-lumieres',
     backgroundTitle: 'ombresetlumieres.png',
   },
-  { label: 'PORTRAITS', link: '', backgroundTitle: 'portraits.jpg' },
+  { label: 'PORTRAITS', link: '/portraits', backgroundTitle: 'portraits.jpg' },
 ];
 
 //synthetiser navbarItems et weekItems

@@ -9,19 +9,48 @@ import { RouteErrorComponent } from './pages/route-error/route-error.component';
 
 const routes: Routes = [
   {
-    path: 'Work',
+    path: 'work',
+    title: 'work',
     component: PersonalProjectsComponent,
   },
   {
-    path: 'Contacts',
-    component: ContactsComponent,
-  },
-  {
-    path: '365',
+    path: 'work/365',
+    title: '365',
     component: TroisSixCinqComponent,
   },
   {
+    path: 'work/samedi',
+    title: 'samedi',
+    component: RouteErrorComponent,
+  },
+  {
+    path: 'work/porsche',
+    title: 'porsche',
+    component: RouteErrorComponent,
+  },
+  {
+    path: 'work/CEBE',
+    title: 'CEBE',
+    component: RouteErrorComponent,
+  },
+  {
+    path: 'work/ombre-et-lumieres',
+    title: 'ombre-et-lumieres',
+    component: RouteErrorComponent,
+  },
+  {
+    path: 'work/portraits',
+    title: 'portraits',
+    component: RouteErrorComponent,
+  },
+  {
+    path: 'contacts',
+    title: 'contacts',
+    component: ContactsComponent,
+  },
+  {
     path: '',
+    title: "page d'accueil",
     component: HomepageComponent,
   },
   { path: '**', component: RouteErrorComponent },
