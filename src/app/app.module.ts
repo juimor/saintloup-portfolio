@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -15,6 +16,7 @@ import { PersonalProjectsComponent } from './pages/personal-projects/personal-pr
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
 import { RouteErrorComponent } from './pages/route-error/route-error.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,16 +27,18 @@ import { RouteErrorComponent } from './pages/route-error/route-error.component';
     PersonalProjectsComponent,
     NavbarComponent,
     TroisSixCinqComponent,
-    RouteErrorComponent
+    RouteErrorComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
