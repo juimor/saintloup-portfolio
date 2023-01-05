@@ -11,6 +11,7 @@ export class PersonalProjectsComponent {
   backgroundTitle: string;
   gridColoumns = 2;
   Style: string;
+  isFooterHide: boolean = true;
 
   changeBackgroundTitle(title: string) {
     this.backgroundTitle = title;
@@ -24,5 +25,13 @@ export class PersonalProjectsComponent {
         this.backgroundTitle +
         ' ); background-repeat: no-repeat; background-position: center; background-size: 100%;';
     } else this.Style = '';
+  }
+
+  setFooterVisibility() {
+    this.isFooterHide = !this.isFooterHide;
+  }
+
+  hideFooter(isFooterHide: boolean) {
+    this.isFooterHide = isFooterHide;
   }
 }

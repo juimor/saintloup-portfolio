@@ -1,9 +1,4 @@
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutAlign="center stretch"
-  [style]="Style"
->
+<div class="container" fxLayout fxLayoutAlign="center stretch" [style]="Style">
   <div fxLayout="column" fxFlex="10" fxLayoutAlign="space-between start">
     <span class="styled-link">
       <a routerLink="/" routerLinkActive="active">BACK</a>
@@ -22,11 +17,18 @@
   </div>
 
   <div fxFlex fxLayout="column" fxLayoutAlign="start end">
-    <span class="styled-link"><a href="/Contacts">CONTACT</a></span>
-    <span class="styled-link"
-      ><a href="https://www.instagram.com/4mbianss/" target="_blank"
-        >INSTAGRAM</a
-      ></span
+    <span class="styled-link">
+      <a (click)="setFooterVisibility()">CONTACT</a></span
     >
+    <span class="styled-link">
+      <a href="https://www.instagram.com/4mbianss/" target="_blank"
+        >INSTAGRAM</a
+      >
+    </span>
   </div>
 </div>
+<app-footer
+  class="footer"
+  (hideFooter)="hideFooter($event)"
+  *ngIf="!isFooterHide"
+></app-footer>
