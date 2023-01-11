@@ -22,3 +22,12 @@
     font-size: 50px;
   }
 }
+
+#delay {
+  transition-property: font-size;
+  transition-duration: 0.02s;
+}
+
+#delay:hover {
+  font-size: 50px;
+}

@@ -18,7 +18,9 @@
 
   <div fxFlex fxLayout="column" fxLayoutAlign="start end">
     <span class="styled-link">
-      <a (click)="setFooterVisibility()">CONTACT</a></span
+      <a href="javascript:void(0)" (click)="setFooterVisibility()"
+        >CONTACT</a
+      ></span
     >
     <span class="styled-link">
       <a href="https://www.instagram.com/4mbianss/" target="_blank"
@@ -28,7 +30,7 @@
   </div>
 </div>
 <app-footer
+  [ngClass]="{ appear: !isFooterHide, disappear: isFooterHide }"
   class="footer"
   (hideFooter)="hideFooter($event)"
-  *ngIf="!isFooterHide"
 ></app-footer>

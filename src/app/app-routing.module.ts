@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
-import { ContactsComponent } from './pages/contacts/contacts.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
 import { RouteErrorComponent } from './pages/route-error/route-error.component';
 
@@ -44,13 +43,8 @@ const routes: Routes = [
     component: RouteErrorComponent,
   },
   {
-    path: 'contacts',
-    title: 'contacts',
-    component: ContactsComponent,
-  },
-  {
     path: '',
-    title: "page d'accueil",
+    title: 'by 4mbianss',
     component: HomepageComponent,
   },
   { path: '**', component: RouteErrorComponent },

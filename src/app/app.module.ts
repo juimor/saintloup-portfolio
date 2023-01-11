@@ -11,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { ContactsComponent } from './pages/contacts/contacts.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
@@ -23,7 +22,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HomepageComponent,
     MenuComponent,
-    ContactsComponent,
     PersonalProjectsComponent,
     NavbarComponent,
     TroisSixCinqComponent,

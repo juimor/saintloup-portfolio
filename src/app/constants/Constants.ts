@@ -3,7 +3,7 @@ import { MenuItem } from '../models/menuItem.model';
 
 export const homepageMenuItems: MenuItem[] = [
   { label: 'PERSONAL PROJECTS', link: '/work' },
-  { label: 'CONTACTS', link: '/contacts' },
+  { label: 'CONTACTS', link: '' },
 ];
 
 export const projectsMenuItems: MenuItem[] = [
