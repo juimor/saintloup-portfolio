@@ -12,13 +12,22 @@
     </div>
 
     <div class="homepage--menu">
-      <!-- fxFlexOffset="15" a tester-->
-      <div class="menu-links" fxLayout="column" fxLayoutAlign="end">
-        <app-menu
-          class="homepage--app-menu"
-          [items]="homepageMenuItems"
-          [gap]="80"
-        ></app-menu>
+      <div
+        class="menu-links"
+        fxLayout="column"
+        fxLayoutAlign="end"
+        fxLayoutGap="80"
+      >
+        <span class="menu-links tyled-link">
+          <a routerLink="work" routerLinkActive="active">PERSONAL PROJECTS</a>
+        </span>
+        <span class="menu-links tyled-link">
+          <a
+            href="javascript:void(0)"
+            (click)="footerService.setFooterVisibility()"
+            >CONTACTS</a
+          >
+        </span>
       </div>
     </div>
   </div>

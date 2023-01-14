@@ -6,9 +6,6 @@
   width: 100%;
 }
 
-.content--container {
-}
-
 .content--img-container {
   width: 100%;
   padding-left: 56px;
@@ -31,6 +28,8 @@
 
 .img-first-plan {
   position: absolute;
+  justify-content: center;
+  align-items: center;
   img {
     height: 500px;
   }

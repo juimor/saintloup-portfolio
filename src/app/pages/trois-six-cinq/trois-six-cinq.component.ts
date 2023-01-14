@@ -22,17 +22,6 @@ export class TroisSixCinqComponent {
     console.log(this.navbar365Items);
   }
 
-  // setBackgroundStyle(url: string) {
-  //   this.backgroundImgUrl = url;
-  //   if (this.backgroundImgUrl != '' || this.Style === '') {
-  //     this.Style =
-  //       'background: url(../../../assets/' +
-  //       this.backgroundImgUrl +
-  //       ' ); background-repeat: no-repeat; background-position: center; background-size: 30%; ';
-  //   }
-  //   console.log(this.Style);
-  // }
-
   displayImg(url: string) {
     this.backgroundImgUrl = '../../../assets/' + url;
   }
@@ -45,12 +34,10 @@ export class TroisSixCinqComponent {
   }
 
   onMouseOver(item: ImgItem) {
-    //this.setBackgroundStyle(item.url);
     this.displayImg(item.url);
   }
 
   onMouseLeave() {
-    //this.Style = '';
     this.backgroundImgUrl = '';
   }
 }

@@ -14,7 +14,6 @@ import { MenuComponent } from './components/menu/menu.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
-import { RouteErrorComponent } from './pages/route-error/route-error.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { FooterComponent } from './components/footer/footer.component';
     PersonalProjectsComponent,
     NavbarComponent,
     TroisSixCinqComponent,
-    RouteErrorComponent,
     FooterComponent,
   ],
   imports: [

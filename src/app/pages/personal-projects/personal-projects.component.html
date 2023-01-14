@@ -18,7 +18,7 @@
 
   <div fxFlex fxLayout="column" fxLayoutAlign="start end">
     <span class="styled-link">
-      <a href="javascript:void(0)" (click)="setFooterVisibility()"
+      <a href="javascript:void(0)" (click)="footerService.setFooterVisibility()"
         >CONTACT</a
       ></span
     >
@@ -29,8 +29,3 @@
     </span>
   </div>
 </div>
-<app-footer
-  [ngClass]="{ appear: !isFooterHide, disappear: isFooterHide }"
-  class="footer"
-  (hideFooter)="hideFooter($event)"
-></app-footer>

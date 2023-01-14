@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
-import { RouteErrorComponent } from './pages/route-error/route-error.component';
 
 const routes: Routes = [
   {
@@ -20,34 +19,34 @@ const routes: Routes = [
   {
     path: 'work/samedi',
     title: 'samedi',
-    component: RouteErrorComponent,
+    component: PersonalProjectsComponent,
   },
   {
     path: 'work/porsche',
     title: 'porsche',
-    component: RouteErrorComponent,
+    component: PersonalProjectsComponent,
   },
   {
     path: 'work/CEBE',
     title: 'CEBE',
-    component: RouteErrorComponent,
+    component: PersonalProjectsComponent,
   },
   {
     path: 'work/ombre-et-lumieres',
     title: 'ombre-et-lumieres',
-    component: RouteErrorComponent,
+    component: PersonalProjectsComponent,
   },
   {
     path: 'work/portraits',
     title: 'portraits',
-    component: RouteErrorComponent,
+    component: PersonalProjectsComponent,
   },
   {
     path: '',
     title: 'by 4mbianss',
     component: HomepageComponent,
   },
-  { path: '**', component: RouteErrorComponent },
+  { path: '**', component: PersonalProjectsComponent },
 ];
 
 @NgModule({

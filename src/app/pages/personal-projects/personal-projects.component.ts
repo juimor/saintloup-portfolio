@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { projectsMenuItems } from 'src/app/constants/Constants';
+import { FooterService } from 'src/app/services/footer.service';
 
 @Component({
   selector: 'app-personal-projects',
@@ -7,11 +8,13 @@ import { projectsMenuItems } from 'src/app/constants/Constants';
   styleUrls: ['./personal-projects.component.scss'],
 })
 export class PersonalProjectsComponent {
+
+  constructor(public footerService : FooterService){}
+
   projectsMenuItems = projectsMenuItems;
   backgroundTitle: string;
   gridColoumns = 2;
   Style: string;
-  isFooterHide: boolean = true;
 
   changeBackgroundTitle(title: string) {
     this.backgroundTitle = title;
@@ -25,13 +28,5 @@ export class PersonalProjectsComponent {
         this.backgroundTitle +
         ' ); background-repeat: no-repeat; background-position: center; background-size: 100%;';
     } else this.Style = '';
-  }
-
-  setFooterVisibility() {
-    this.isFooterHide = !this.isFooterHide;
-  }
-
-  hideFooter(isFooterHide: boolean) {
-    this.isFooterHide = isFooterHide;
   }
 }
