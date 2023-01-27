@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#trois {
+    align-self: center;
+    padding: 200px 100px;
+}
+
+.credits-content {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#title{
+    font-size: 4vw;
+    padding-bottom: 200px
+  } 
+
+#sub-title {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 10px;
+    p, span {
+        font-size: 2vw;
+    }
+}
+
+.reveal-credits:hover {
+    color: aquamarine;
+}
+.back-btn {
+    padding: 100px;
+    font-size: 30px;
+}
+
+.copyright {
+    font-size: 30px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

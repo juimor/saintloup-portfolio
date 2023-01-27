@@ -1,1 +1,89 @@
-<p>cebe works!</p>
+<div class="container">
+  <img alt="" src="/assets/pages/cebe/1.webp" loading="lazy" width="100%" />
+  <img alt="" src="/assets/pages/cebe/2.webp" loading="lazy" width="100%" />
+  <img
+    id="trois"
+    alt=""
+    src="/assets/pages/cebe/3.webp"
+    loading="lazy"
+    width="80%"
+  />
+
+  <div style="display: flex; justify-content: space-between; padding: 100px">
+    <img alt="" src="/assets/pages/cebe/4.webp" loading="lazy" width="500px" />
+    <img alt="" src="/assets/pages/cebe/5.webp" loading="lazy" width="500px" />
+    <img
+      alt=""
+      src="/assets/pages/cebe/blank.webp"
+      loading="lazy"
+      width="500px"
+    />
+  </div>
+  <div
+    style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 400px 100px 300px 100px;
+    "
+  >
+    <img
+      alt=""
+      style="padding-right: 100px"
+      src="/assets/pages/cebe/6.webp"
+      loading="lazy"
+      width="500px"
+    />
+    <img alt="" src="/assets/pages/cebe/7.webp" loading="lazy" width="1000px" />
+  </div>
+  <img alt="" src="/assets/pages/cebe/8.jpg" loading="lazy" width="100%" />
+
+  <div
+    style="display: flex; justify-content: space-between; padding: 200px 100px"
+  >
+    <img alt="" src="/assets/pages/cebe/9.webp" loading="lazy" width="500px" />
+    <img
+      alt=""
+      src="/assets/pages/cebe/10.webp"
+      loading="lazy"
+      width="1000px"
+    />
+  </div>
+  <div class="center-content">
+    <img
+      alt=""
+      style="padding: 500px"
+      src="/assets/pages/cebe/11.webp"
+      loading="lazy"
+      width="1000px"
+    />
+  </div>
+
+  <div class="credits-content" style="padding-bottom: 100px">
+    <p id="title">CEBE EYEWEAR - Editorial design [01.22]</p>
+    <div id="sub-title">
+      <p (mouseover)="reveal(1)" (mouseout)="hide(1)">
+        <span>PHOTOGRAPHY: </span
+        ><span [ngStyle]="credit1 ? { color: 'red' } : { color: 'white' }"
+          >4mbianss</span
+        >
+      </p>
+      <p class="credits-text" (mouseover)="reveal(2)" (mouseout)="hide(2)">
+        <span>ART DIRECTION & EDITORIAL DESIGN: </span
+        ><span [ngStyle]="credit2 ? { color: 'red' } : { color: 'white' }"
+          >gggroupe</span
+        >
+      </p>
+      <p class="credits-text" (mouseover)="reveal(3)" (mouseout)="hide(3)">
+        <span>FICTIONAL PROJECT FOR: </span
+        ><span [ngStyle]="credit3 ? { color: 'red' } : { color: 'white' }"
+          >gggroupe </span
+        >PORTFOLIO, WITHOUT COMMERCIAL PURPOSE.
+      </p>
+    </div>
+  </div>
+  <span class="styled-link back-btn">
+    <a routerLink="/" routerLinkActive="active">BACK</a>
+  </span>
+  <span class="copyright center-content"> © 4mbianss 2023 </span>
+</div>
