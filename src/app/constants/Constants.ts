@@ -11,13 +11,13 @@ export const projectsMenuItems: MenuItem[] = [
     link: '/365',
     backgroundTitle: '365v2.jpg',
   },
-  { label: 'SAMEDI', link: '/samedi', backgroundTitle: 'samedi.gif' },
+  { label: 'SAMEDI', link: '/samedi', backgroundTitle: 'pages/samedi.gif' },
   {
     label: 'CHEIRON',
     link: '/cheiron',
     backgroundTitle: 'porshe.jpg',
   },
-  { label: 'CEBE', link: '/CEBE', backgroundTitle: 'CEBE.jpg' },
+  { label: 'CEBE', link: '/CEBE', backgroundTitle: 'pages/CEBE.jpg' },
   {
     label: 'الظلال والأضواء',
     link: '/ombres-et-lumieres',
