@@ -8,7 +8,7 @@ import { OmbresEtLumieresComponent } from './pages/personal-projects/ombres-et-l
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { PortraitsComponent } from './pages/personal-projects/portraits/portraits.component';
 import { SamediComponent } from './pages/personal-projects/samedi/samedi.component';
-import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
+import { TroisSixCinqComponent } from './pages/personal-projects/trois-six-cinq/trois-six-cinq.component';
 
 const routes: Routes = [
   {

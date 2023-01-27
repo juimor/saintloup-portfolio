@@ -13,7 +13,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
+import { TroisSixCinqComponent } from './pages/personal-projects/trois-six-cinq/trois-six-cinq.component';
 import { SamediComponent } from './pages/personal-projects/samedi/samedi.component';
 import { CheironComponent } from './pages/personal-projects/cheiron/cheiron.component';
 import { CebeComponent } from './pages/personal-projects/cebe/cebe.component';
