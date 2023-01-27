@@ -54,7 +54,7 @@ body {
 
 span {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1vw;
   font-style: normal;
 }
 
@@ -82,4 +82,10 @@ span {
   a:visited {
     color: black;
   }
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

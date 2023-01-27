@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.first-col {
+    width: 20%;
+    a:hover {
+        font-size: 80px;
+    }
+}
+
+.second-col {
+    display: inline-table;
+    width: 30%;
+    opacity: 1;
+    a:hover {
+        transition: 0.5s;
+        opacity: 0.8;
+    }
+}
+
+.third-col {
+    width: 20%;
+}
+
+img {
+    margin-left: 100px;
+    margin-right: 100px;
+}

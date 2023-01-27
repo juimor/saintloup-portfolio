@@ -2,7 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { CebeComponent } from './pages/personal-projects/cebe/cebe.component';
+import { CheironComponent } from './pages/personal-projects/cheiron/cheiron.component';
+import { OmbresEtLumieresComponent } from './pages/personal-projects/ombres-et-lumieres/ombres-et-lumieres.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
+import { PortraitsComponent } from './pages/personal-projects/portraits/portraits.component';
+import { SamediComponent } from './pages/personal-projects/samedi/samedi.component';
 import { TroisSixCinqComponent } from './pages/trois-six-cinq/trois-six-cinq.component';
 
 const routes: Routes = [
@@ -19,27 +24,27 @@ const routes: Routes = [
   {
     path: 'work/samedi',
     title: 'samedi',
-    component: PersonalProjectsComponent,
+    component: SamediComponent,
   },
   {
-    path: 'work/porsche',
-    title: 'porsche',
-    component: PersonalProjectsComponent,
+    path: 'work/cheiron',
+    title: 'cheiron',
+    component: CheironComponent,
   },
   {
     path: 'work/CEBE',
     title: 'CEBE',
-    component: PersonalProjectsComponent,
+    component: CebeComponent,
   },
   {
-    path: 'work/ombre-et-lumieres',
-    title: 'ombre-et-lumieres',
-    component: PersonalProjectsComponent,
+    path: 'work/ombres-et-lumieres',
+    title: 'ombres-et-lumieres',
+    component: OmbresEtLumieresComponent,
   },
   {
     path: 'work/portraits',
     title: 'portraits',
-    component: PersonalProjectsComponent,
+    component: PortraitsComponent,
   },
   {
     path: '',

@@ -1,4 +1,3 @@
-import { ImgItem } from '../models/imgItem.model';
 import { MenuItem } from '../models/menuItem.model';
 
 export const homepageMenuItems: MenuItem[] = [
@@ -14,14 +13,14 @@ export const projectsMenuItems: MenuItem[] = [
   },
   { label: 'SAMEDI', link: '/samedi', backgroundTitle: 'samedi.gif' },
   {
-    label: 'PORSCHE',
-    link: '/porsche',
+    label: 'CHEIRON',
+    link: '/cheiron',
     backgroundTitle: 'porshe.jpg',
   },
   { label: 'CEBE', link: '/CEBE', backgroundTitle: 'CEBE.jpg' },
   {
     label: 'الظلال والأضواء',
-    link: '/ombre-et-lumieres',
+    link: '/ombres-et-lumieres',
     backgroundTitle: 'ombresetlumieres.png',
   },
   { label: 'PORTRAITS', link: '/portraits', backgroundTitle: 'portraits.jpg' },

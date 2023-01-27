@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { projectsMenuItems } from 'src/app/constants/Constants';
-import { FooterService } from 'src/app/services/footer.service';
 
 @Component({
   selector: 'app-personal-projects',
@@ -9,7 +8,7 @@ import { FooterService } from 'src/app/services/footer.service';
 })
 export class PersonalProjectsComponent {
 
-  constructor(public footerService : FooterService){}
+  constructor(){}
 
   projectsMenuItems = projectsMenuItems;
   backgroundTitle: string;
@@ -24,7 +23,7 @@ export class PersonalProjectsComponent {
   setBackgroundStyle() {
     if (this.backgroundTitle != undefined) {
       this.Style =
-        'background: url(../../../assets/' +
+        'background: url(/assets/' +
         this.backgroundTitle +
         ' ); background-repeat: no-repeat; background-position: center; background-size: 100%;';
     } else this.Style = '';

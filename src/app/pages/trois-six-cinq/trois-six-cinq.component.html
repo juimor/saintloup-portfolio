@@ -30,12 +30,16 @@
               (mouseout)="onMouseLeave()"
               loading="lazy"
               class="content--first-col-img"
-              [src]="'../../../assets/' + dayItem.url"
+              [src]="'/assets/' + dayItem.url"
             />
           </ng-container>
         </div>
       </ng-container>
-      <div *ngIf="this.backgroundImgUrl != ''" class="img-first-plan">
+      <div
+        *ngIf="this.backgroundImgUrl != ''"
+        #imgOverview
+        class="img-first-plan"
+      >
         <img loading="lazy" [src]="backgroundImgUrl" />
       </div>
     </div>

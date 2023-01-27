@@ -1,34 +1,26 @@
-<div class="container" fxLayout="row">
-  <div class="homepage--container">
-    <div class="homepage--img">
-      <img
-        alt="gif by enzo saintloup"
-        src="../../../assets/344.gif"
-        loading="lazy"
-      />
+<div class="container">
+  <div class="homepage--title">
+    <h1 id="title">SAINTLOUP</h1>
+    <div id="sub-title">
+      <h2>PORTFOLIO</h2>
+      <h3>[2023]</h3>
     </div>
-    <div class="homepage--title">
-      <span><a>344</a></span>
-    </div>
+  </div>
 
-    <div class="homepage--menu">
-      <div
-        class="menu-links"
-        fxLayout="column"
-        fxLayoutAlign="end"
-        fxLayoutGap="80"
-      >
-        <span class="menu-links tyled-link">
-          <a routerLink="work" routerLinkActive="active">PERSONAL PROJECTS</a>
-        </span>
-        <span class="menu-links tyled-link">
-          <a
-            href="javascript:void(0)"
-            (click)="footerService.setFooterVisibility()"
-            >CONTACTS</a
-          >
-        </span>
-      </div>
-    </div>
+  <div class="homepage--menu">
+    <span class="menu-links styled-link">
+      <a routerLink="work" routerLinkActive="active">PERSONAL PROJECTS</a>
+    </span>
+    <span class="menu-links styled-link">
+      <a href="javascript:void(0)">CONTACTS</a>
+    </span>
+  </div>
+
+  <div class="homepage--img">
+    <img
+      alt="gif by enzo saintloup"
+      src="/assets/homepage-img.webp"
+      loading="lazy"
+    />
   </div>
 </div>

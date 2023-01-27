@@ -1,12 +1,18 @@
-<div class="container" fxLayout fxLayoutAlign="center stretch" [style]="Style">
-  <div fxLayout="column" fxFlex="10" fxLayoutAlign="space-between start">
+<div class="container" [style]="Style">
+  <div class="first-col">
     <span class="styled-link">
       <a routerLink="/" routerLinkActive="active">BACK</a>
     </span>
-    <img src="../../../assets/st-loup-portfolio.jpg" loading="lazy" />
+    <div class="homepage--title">
+      <h1 id="title">SAINTLOUP</h1>
+      <div id="sub-title">
+        <h2>PORTFOLIO</h2>
+        <h3>[2023]</h3>
+      </div>
+    </div>
   </div>
 
-  <div fxLayoutAlign="end" fxFlex="20">
+  <div class="second-col">
     <app-menu
       (backgroundTitleEvent)="changeBackgroundTitle($event)"
       [items]="projectsMenuItems"
@@ -16,11 +22,9 @@
     ></app-menu>
   </div>
 
-  <div fxFlex fxLayout="column" fxLayoutAlign="start end">
+  <div class="third-col">
     <span class="styled-link">
-      <a href="javascript:void(0)" (click)="footerService.setFooterVisibility()"
-        >CONTACT</a
-      ></span
+      <a href="mailto:test@example.com">CONTACT</a></span
     >
     <span class="styled-link">
       <a href="https://www.instagram.com/4mbianss/" target="_blank"

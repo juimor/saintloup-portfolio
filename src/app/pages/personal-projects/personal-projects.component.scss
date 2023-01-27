@@ -1,8 +1,57 @@
 .container {
   padding: 5% 5%;
-  height: 100%;
+  display: flex;
+  height: -webkit-fill-available;
+  justify-content: center;
+}
+
+.first-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.second-col {
+  display: flex;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+  width: 10%;
+}
+
+.third-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 70%;
 }
 
 .app-navbar {
   width: 100%;
+}
+
+.homepage--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#title{
+  font-size: 1vw;
+  padding-bottom: 5px;
+}
+
+#sub-title {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  h2 {
+    font-size: 0.5vw;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 0.3vw;
+    font-weight: 100;
+  }
 }
