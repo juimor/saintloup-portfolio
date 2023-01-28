@@ -1,1 +1,129 @@
-<p>cheiron works!</p>
+<div class="container">
+  <p class="star">*</p>
+  <p class="sticky-title">MONTAGNE DU CHEIRON</p>
+  <div class="first-row flex-between">
+    <img
+      alt=""
+      src="/assets/pages/cheiron/1.webp"
+      loading="lazy"
+      width="50%"
+      height="600px"
+    />
+    <img
+      id="second-img"
+      alt=""
+      src="/assets/pages/cheiron/2.webp"
+      loading="lazy"
+      width="25%"
+    />
+  </div>
+
+  <div class="second-row flex-between">
+    <img alt="" src="/assets/pages/cheiron/3.webp" loading="lazy" width="40%" />
+    <img
+      id="second-img"
+      alt=""
+      src="/assets/pages/cheiron/4.webp"
+      loading="lazy"
+      width="50%"
+      height="40%"
+    />
+  </div>
+  <img
+    class="third-row"
+    alt=""
+    src="/assets/pages/cheiron/5.webp"
+    loading="lazy"
+    width="100%"
+  />
+  <div class="fourth-row flex-between">
+    <img alt="" src="/assets/pages/cheiron/6.webp" loading="lazy" width="17%" />
+    <img alt="" src="/assets/pages/cheiron/7.webp" loading="lazy" width="17%" />
+    <img alt="" src="/assets/pages/cheiron/8.webp" loading="lazy" width="17%" />
+  </div>
+
+  <div class="fifth-row flex-between">
+    <img
+      class="transition clickable"
+      *ngIf="!firstImgBool"
+      (click)="nextImage('first')"
+      alt=""
+      src="/assets/pages/cheiron/9.1.jpeg"
+      loading="lazy"
+      width="27%"
+    />
+    <img
+      class="transition clickable"
+      *ngIf="firstImgBool"
+      (click)="nextImage('first')"
+      alt=""
+      src="/assets/pages/cheiron/9.2.jpeg"
+      loading="lazy"
+      width="27%"
+    />
+    <img
+      class="transition clickable"
+      (click)="nextImage('second')"
+      [src]="secondImgSelected"
+      alt=""
+      src="/assets/pages/cheiron/10.1.jpeg"
+      loading="lazy"
+      width="27%"
+    />
+    <img
+      alt=""
+      src="/assets/pages/cheiron/11.webp"
+      loading="lazy"
+      width="27%"
+    />
+  </div>
+
+  <div class="sixth-row center-content">
+    <img
+      alt=""
+      src="/assets/pages/cheiron/12.webp"
+      loading="lazy"
+      width="30%"
+    />
+    <img
+      alt=""
+      src="/assets/pages/cheiron/13.webp"
+      loading="lazy"
+      width="30%"
+    />
+  </div>
+
+  <div class="seventh-row center-content">
+    <img
+      alt=""
+      src="/assets/pages/cheiron/14.webp"
+      loading="lazy"
+      width="45%"
+    />
+  </div>
+  <div class="eighth-row flex-between">
+    <img
+      alt=""
+      src="/assets/pages/cheiron/15.webp"
+      loading="lazy"
+      width="30%"
+    />
+    <img
+      alt=""
+      src="/assets/pages/cheiron/16.webp"
+      loading="lazy"
+      width="30%"
+    />
+  </div>
+  <div class="ninth-row center-content">
+    <img
+      alt=""
+      src="/assets/pages/cheiron/17.webp"
+      loading="lazy"
+      width="30%"
+    />
+  </div>
+  <span class="styled-link back-btn center-content">
+    <a routerLink="/work" routerLinkActive="active">BACK</a>
+  </span>
+</div>

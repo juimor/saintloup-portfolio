@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-title {
+    position: fixed;
+    top: 0;
+    font-size: 80px;
+    color:rgba(17, 255, 0);
+    padding: 50px;
+}
+
+.star {
+    align-self: center;
+    margin-left: 30px;
+    font-size: 100px;
+    color:rgba(17, 255, 0);
+    position: absolute;
+}
+
+.first-row {
+    padding: 70px 50px 50px 50px;
+    #second-img {
+        margin-top: 150px;
+        margin-right: 200px;
+    }
+}
+
+.second-row {
+    align-items: flex-end;
+    padding: 100px;
+}
+
+.third-row {
+    padding: 100px 0;
+}
+
+.fourth-row {
+    padding: 150px 130px;
+} 
+
+.fifth-row {
+    padding: 150px 130px;
+}
+
+.fifth-row:hover {
+    .clickable {
+        cursor: pointer;
+    }
+}
+
+.sixth-row {
+    img {
+        padding: 0 50px;
+    }
+}
+
+.seventh-row {
+    padding: 150px;
+}
+
+.eighth-row {
+    padding: 50px 200px;
+}
+
+.ninth-row {
+    padding-top: 500px;
+}
+
+.back-btn {
+    padding: 100px;
+}
+
+.transition {
+    transition: opacity 2s ease-in-out;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
