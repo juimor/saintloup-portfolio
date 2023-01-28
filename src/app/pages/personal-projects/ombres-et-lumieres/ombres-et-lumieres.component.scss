@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 130px 130px 70px 130px;
+}
+
+.back-btn {
+    padding-bottom: 16px;
+    font-size: 30px;
+}
