@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { navbar365Items } from 'src/app/constants/Constants';
+import { navbarItems } from 'src/app/constants/Constants';
 import { MenuItem } from 'src/app/models/menuItem.model';
 
 @Component({
@@ -8,7 +8,7 @@ import { MenuItem } from 'src/app/models/menuItem.model';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  items = navbar365Items;
+  items = navbarItems;
 
   @Output() weekItemClickEvent = new EventEmitter<string>();
 

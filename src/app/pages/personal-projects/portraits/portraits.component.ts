@@ -31,14 +31,10 @@ export class PortraitsComponent implements OnInit {
       if (this.index < this.imageCounter) this.imageSelected = this.carouselItems[this.index++];
     } else {
       if (this.index === 0) {
-        console.log('=== 0')
-        console.log(this.index)
         this.imageSelected = this.carouselItems[this.imageCounter-1];
         this.index = this.imageCounter-1;
       } 
       if (this.index > 0) {
-        console.log('> 0')
-        console.log(this.index)
         this.imageSelected = this.carouselItems[this.index--];
       }
     }

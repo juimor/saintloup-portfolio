@@ -19,7 +19,6 @@ export class CheironComponent implements AfterViewInit {
     switch (image) {
       case 'first':
         this.firstImgBool ? this.firstImgBool = false : this.firstImgBool = true;
-        console.log(this.firstImgBool)
         if (this.firstImgSelected.includes('9.1')) this.firstImgSelected = '/assets/pages/cheiron/9.2.jpeg';
         else this.firstImgSelected = '/assets/pages/cheiron/9.1.jpeg'
         break;

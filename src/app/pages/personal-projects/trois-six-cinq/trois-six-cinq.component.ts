@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ImgItem } from 'src/app/models/imgItem.model';
+import { Component } from '@angular/core';
 import { ImagesService } from 'src/app/services/images.service';
 
 @Component({
@@ -7,7 +6,7 @@ import { ImagesService } from 'src/app/services/images.service';
   templateUrl: './trois-six-cinq.component.html',
   styleUrls: ['./trois-six-cinq.component.scss'],
 })
-export class TroisSixCinqComponent implements OnInit{
+export class TroisSixCinqComponent{
 
   constructor(private imagesService: ImagesService) {}
 
@@ -17,10 +16,7 @@ export class TroisSixCinqComponent implements OnInit{
   daySelected: string = 'nothingSelected';
   weekItemSelected: any;
   loading: boolean = false;
-  
-  ngOnInit() {
-    
-  }
+
 
   weekItemClickAction($event: string) {
     this.loading = true;
