@@ -68,7 +68,7 @@ export const firebaseFolders: any = [{
     folderName:'LUNDI',
     numberToFetch: 57
   },
-  MARDI: {
+  MARDI : {
     folderName:'MARDI',
     numberToFetch: 29
   },

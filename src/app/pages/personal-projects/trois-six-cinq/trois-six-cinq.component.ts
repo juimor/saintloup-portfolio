@@ -22,10 +22,6 @@ export class TroisSixCinqComponent implements OnInit{
     
   }
 
-  displayImg(url: string) {
-    this.backgroundImgUrl = '/assets/' + url;
-  }
-
   weekItemClickAction($event: string) {
     this.loading = true;
     this.daySelected = $event.toUpperCase();
@@ -36,7 +32,7 @@ export class TroisSixCinqComponent implements OnInit{
   }
 
   onMouseOver(item:any) {
-    this.displayImg(item);
+    this.backgroundImgUrl = item;
   }
 
   onMouseLeave() {
