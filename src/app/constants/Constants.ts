@@ -63,6 +63,28 @@ export const projectsMenuItems: MenuItem[] = [
   },
 ];
 
+export const firebaseFolders: any = [{
+  LUNDI: {
+    folderName:'LUNDI',
+    numberToFetch: 57
+  },
+  MARDI: {
+    folderName:'MARDI',
+    numberToFetch: 29
+  },
+  MERCREDI: {
+    folderName:'MERCREDI',
+    numberToFetch: 38
+  },
+  JEUDI: {
+    folderName:'JEUDI',
+    numberToFetch: 22
+  },
+  VENDREDI: {
+    folderName:'VENDREDI',
+    numberToFetch: 32
+  }}];
+
 //inutile ?
 export const navbar365Items: MenuItem[] = [
   {

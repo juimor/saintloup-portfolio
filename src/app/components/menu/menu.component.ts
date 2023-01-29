@@ -9,7 +9,6 @@ import { MenuItem } from 'src/app/models/menuItem.model';
 
 export class MenuComponent {
 
-  @Input() reverse: boolean = false;
   @Input() items: MenuItem[] = [];
   @Input() gap: number = 24;
   @Input() hasHover: boolean = false;

@@ -1,40 +1,27 @@
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutAlign="center stretch"
-  [style]="Style"
->
-  <div fxLayout="column" fxLayoutAlign="center center" fxFlex="95">
+<div class="container center-content">
+  <div class="content-container">
     <app-navbar
-      fxFlex="10"
       class="app-navbar"
       (weekItemClickEvent)="weekItemClickAction($event)"
     ></app-navbar>
-    <div
-      class="content--container"
-      fxFlex
-      fxLayout="column"
-      fxLayoutAlign="center center"
-    >
-      <ng-container *ngIf="daySelected != 'nothingSelected'">
-        <div
-          class="content--img-container"
-          fxLayoutGap="24px"
-          fxLayoutAlign="center center"
-          fxLayout="row wrap"
-          fxFlex
-        >
-          <ng-container *ngFor="let dayItem of weekItemSelected.items">
+    <div class="image-content-container center-content">
+      <div *ngIf="daySelected != 'nothingSelected'">
+        <div class="image-container center-content" *ngIf="!loading">
+          <ng-container *ngFor="let item of weekItemSelected">
             <img
-              (mouseover)="onMouseOver(dayItem)"
+              (mouseover)="onMouseOver(item)"
               (mouseout)="onMouseLeave()"
               loading="lazy"
-              class="content--first-col-img"
-              [src]="'/assets/' + dayItem.url"
+              class="image"
+              [src]="item"
+              height="100px"
             />
           </ng-container>
         </div>
-      </ng-container>
+        <div class="center-content" *ngIf="loading">
+          <img loading="lazy" src="/assets/loading.gif" height="50px" />
+        </div>
+      </div>
       <div
         *ngIf="this.backgroundImgUrl != ''"
         #imgOverview
@@ -43,11 +30,7 @@
         <img loading="lazy" [src]="backgroundImgUrl" />
       </div>
     </div>
-    <span
-      fxFlex="10"
-      fxLayoutAlign="end end"
-      class="styled-link backbtn-container"
-    >
+    <span class="styled-link backbtn-container center-content">
       <a routerLink="/work" routerLinkActive="active">BACK</a>
     </span>
   </div>

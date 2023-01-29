@@ -1,9 +1,4 @@
-<div
-  class="container"
-  fxLayout
-  fxLayoutAlign="space-between start"
-  fxLayoutGap="56"
->
+<div class="container flex-between">
   <span class="styled-link" *ngFor="let item of items">
     <a (click)="onMouseOver(item)" href="javascript:void(0)">
       {{ item.label }}

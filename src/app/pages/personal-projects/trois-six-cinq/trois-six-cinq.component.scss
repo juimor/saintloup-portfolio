@@ -1,29 +1,36 @@
 .container {
-  padding: 5% 5%;
   height: 100%;
 }
 .app-navbar {
+  padding: 0 0 5% 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 90%;
+}
+
+.image-content-container {
+  height: stretch;
   width: 100%;
 }
 
-.content--img-container {
-  width: 100%;
+.image-container {
+  flex-flow: row wrap;
+  align-items: center;
   padding-left: 56px;
-  img {
-    height: 75px;
-  }
 }
 
-.content--first-col-img {
-  padding-top: 24px;
-}
-
-.content--second-col-img {
-  padding-top: 24px;
+.image {
+  padding: 8px;
 }
 
 .backbtn-container {
-  padding-top: 24px;
+  padding: 24px;
+  padding: 5% 0 0 0;
 }
 
 .img-first-plan {

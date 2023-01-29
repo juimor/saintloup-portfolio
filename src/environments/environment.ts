@@ -3,6 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebase: {
+    projectId: 'saintloup-portfolio',
+    appId: '1:871309821410:web:1a7b5b3873c7dd73faa5bb',
+    storageBucket: 'saintloup-portfolio.appspot.com',
+    locationId: 'europe-west',
+    apiKey: 'AIzaSyDDaQ2E_MVM4Fv3y0jNSZ-M7t1fDG4ffQM',
+    authDomain: 'saintloup-portfolio.firebaseapp.com',
+    messagingSenderId: '871309821410',
+  },
   production: false,
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   firebaseConfig: {
