@@ -8,22 +8,19 @@ import { ImagesService } from 'src/app/services/images.service';
 })
 export class TroisSixCinqComponent{
 
-  constructor(private imagesService: ImagesService) {}
+  constructor(public imagesService: ImagesService) {}
 
   test = document.getElementById('full-image');
   backgroundImgUrl: string = '';
   gridColumns = 2;
   daySelected: string = 'nothingSelected';
   weekItemSelected: any;
-  loading: boolean = false;
 
 
   weekItemClickAction($event: string) {
-    this.loading = true;
     this.daySelected = $event.toUpperCase();
     this.imagesService.listAllImages(this.daySelected).then(() => {
       this.weekItemSelected = this.imagesService.itemsUrls;
-      this.loading = false;
     });
   }
 

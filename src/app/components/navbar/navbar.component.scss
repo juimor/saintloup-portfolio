@@ -2,7 +2,17 @@
   width: 100%;
 }
 .styled-link {
-  a:focus {
-    color: red;
-  }
+  
+}
+.btn {
+  background-color: transparent;
+  border: none;
+}
+.btn:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor:not-allowed;
 }

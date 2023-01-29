@@ -31,7 +31,7 @@ export const projectsMenuItems: MenuItem[] = [
     title: 'cheiron',
     style: {
       fullscreen: false,
-      css: 'background: url(/assets/menu/cheiron.webp); background-repeat: no-repeat; background-position: center; background-size: cover;'
+      css: 'background: url(/assets/menu/cheiron.webp); background-repeat: no-repeat; background-position: center; background-size: 90%;'
     }
   },
   { 
@@ -58,7 +58,7 @@ export const projectsMenuItems: MenuItem[] = [
     title: 'portraits',
     style: {
       fullscreen: false,
-      css: 'background: url(/assets/menu/portraits.jpg); background-repeat: no-repeat; background-position: center; background-size: 100%;'
+      css: 'background: url(/assets/menu/portraits.jpg); background-repeat: no-repeat; background-position: center; background-size: 90%;'
     }
   },
 ];

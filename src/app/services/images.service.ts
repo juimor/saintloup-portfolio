@@ -10,10 +10,12 @@ import { firebaseFolders } from "../constants/Constants";
 
 export class ImagesService {
   itemsUrls: string[] = [];
+  loading: boolean = false;
    
   constructor() { }
 
   async listAllImages(folder:string) {
+    this.loading = true;
     this.itemsUrls = [];
     let folderToFetch = firebaseFolders[0][folder]
     for (let i = 1; i < folderToFetch.numberToFetch; i++) {
@@ -25,6 +27,8 @@ export class ImagesService {
         // Handle any errors
         console.error(error);
       });
+      
     }
+    this.loading = false;
   }
 }

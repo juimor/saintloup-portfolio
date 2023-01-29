@@ -1,7 +1,13 @@
 <div class="container flex-between">
   <span class="styled-link" *ngFor="let item of items">
-    <a (click)="onMouseOver(item)" href="javascript:void(0)">
-      {{ item.label }}
-    </a>
+    <button
+      class="btn"
+      (click)="onMouseOver(item)"
+      [disabled]="imagesService.loading"
+    >
+      <span [ngClass]="{ disabled: imagesService.loading }">
+        {{ item.label }}
+      </span>
+    </button>
   </span>
 </div>
