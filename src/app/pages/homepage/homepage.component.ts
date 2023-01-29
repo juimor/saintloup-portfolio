@@ -7,9 +7,6 @@ import { homepageMenuItems } from 'src/app/constants/Constants';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
-
-  constructor(){}
-
   homepageMenuItems = homepageMenuItems;
-
+  constructor(){}
 }

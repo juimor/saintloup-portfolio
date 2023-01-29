@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { projectsMenuItems } from 'src/app/constants/Constants';
+import { MenuItem } from 'src/app/models/menuItem.model';
 
 @Component({
   selector: 'app-personal-projects',
@@ -11,21 +12,17 @@ export class PersonalProjectsComponent {
   constructor(){}
 
   projectsMenuItems = projectsMenuItems;
-  backgroundTitle: string;
   gridColoumns = 2;
-  Style: string;
+  fullscreenStyle: string;
+  semiStyle: string;
 
-  changeBackgroundTitle(title: string) {
-    this.backgroundTitle = title;
-    this.setBackgroundStyle();
+  setBackgroundStyle(item: MenuItem) {
+    if (!!item.style && !!item.style.css) {
+      item.style.fullscreen ? this.fullscreenStyle = item.style.css : this.semiStyle = item.style.css
+    }
   }
-
-  setBackgroundStyle() {
-    if (this.backgroundTitle != undefined) {
-      this.Style =
-        'background: url(/assets/' +
-        this.backgroundTitle +
-        ' ); background-repeat: no-repeat; background-position: center; background-size: 100%;';
-    } else this.Style = '';
+  resetBackgroundStyle() {
+    this.fullscreenStyle = '';
+    this.semiStyle = '';
   }
 }

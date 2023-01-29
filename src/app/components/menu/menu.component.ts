@@ -13,13 +13,14 @@ export class MenuComponent {
   @Input() items: MenuItem[] = [];
   @Input() gap: number = 24;
   @Input() hasHover: boolean = false;
-  @Output() backgroundTitleEvent = new EventEmitter<string>();
+  @Output() backgroundStyleEvent = new EventEmitter<MenuItem>();
+  @Output() mouseLeaveEvent = new EventEmitter<boolean>();
 
   onMouseOver(item: MenuItem) {
-    this.backgroundTitleEvent.emit(item.backgroundTitle);
+    this.backgroundStyleEvent.emit(item);
   }
 
   onMouseLeave() {
-    this.backgroundTitleEvent.emit(undefined);
+    this.mouseLeaveEvent.emit(true);
   }
 }

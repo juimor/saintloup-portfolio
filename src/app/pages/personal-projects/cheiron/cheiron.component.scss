@@ -46,7 +46,7 @@
 
 .fifth-row:hover {
     .clickable {
-        cursor: pointer;
+        cursor: url("/assets/next-cursor.png"),pointer;
     }
 }
 

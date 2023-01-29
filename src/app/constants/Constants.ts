@@ -9,25 +9,61 @@ export const projectsMenuItems: MenuItem[] = [
   {
     label: '365',
     link: '/365',
-    backgroundTitle: '365v2.jpg',
+    title: '365',
+    style: {
+      fullscreen: true,
+      css: 'background: url(/assets/menu/365.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;'
+    },
+    blocked: true
   },
-  { label: 'SAMEDI', link: '/samedi', backgroundTitle: 'pages/samedi.gif' },
+  { 
+    label: 'SAMEDI',
+    link: '/samedi',
+    title: 'samedi',
+    style: {
+      fullscreen: false,
+      css: 'background: url(/assets/menu/samedi.gif); background-repeat: no-repeat; background-position: center; background-size: 100%;'
+    }  
+  },
   {
     label: 'CHEIRON',
     link: '/cheiron',
-    backgroundTitle: 'porshe.jpg',
+    title: 'cheiron',
+    style: {
+      fullscreen: false,
+      css: 'background: url(/assets/menu/cheiron.webp); background-repeat: no-repeat; background-position: center; background-size: cover;'
+    }
   },
-  { label: 'CEBE', link: '/CEBE', backgroundTitle: 'pages/CEBE.jpg' },
+  { 
+    label: 'CEBE',
+    link: '/CEBE',
+    title: 'cebe',
+    style: {
+      fullscreen: true,
+      css: 'background: url(/assets/menu/cebe.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;'
+    }
+  },
   {
     label: 'الظلال والأضواء',
     link: '/ombres-et-lumieres',
-    backgroundTitle: 'ombresetlumieres.png',
+    title: 'ombres-et-lumieres',
+    style: {
+      fullscreen: false,
+      css: 'background: url(/assets/menu/ombres-et-lumieres.png); background-repeat: no-repeat; background-position: center; background-size: 100%;'
+    }
   },
-  { label: 'PORTRAITS', link: '/portraits', backgroundTitle: 'portraits.jpg' },
+  { 
+    label: 'PORTRAITS',
+    link: '/portraits',
+    title: 'portraits',
+    style: {
+      fullscreen: false,
+      css: 'background: url(/assets/menu/portraits.jpg); background-repeat: no-repeat; background-position: center; background-size: 100%;'
+    }
+  },
 ];
 
-//synthetiser navbarItems et weekItems
-
+//inutile ?
 export const navbar365Items: MenuItem[] = [
   {
     label: 'LUNDI',

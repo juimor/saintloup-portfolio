@@ -1,4 +1,4 @@
-<div class="container" [style]="Style">
+<div class="container" [style]="fullscreenStyle">
   <div class="first-col flex-between">
     <span class="styled-link">
       <a routerLink="/" routerLinkActive="active">BACK</a>
@@ -14,13 +14,16 @@
 
   <div class="second-col">
     <app-menu
-      (backgroundTitleEvent)="changeBackgroundTitle($event)"
+      (backgroundStyleEvent)="setBackgroundStyle($event)"
+      (mouseLeaveEvent)="resetBackgroundStyle()"
       [items]="projectsMenuItems"
       [reverse]="true"
       [hasHover]="true"
       [gap]="56"
     ></app-menu>
   </div>
+
+  <div class="backgroundImageDiv" [style]="semiStyle"></div>
 
   <div class="third-col">
     <span class="styled-link">

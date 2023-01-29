@@ -13,7 +13,7 @@ import { TroisSixCinqComponent } from './pages/personal-projects/trois-six-cinq/
 const routes: Routes = [
   {
     path: 'work',
-    title: 'work',
+    title: 'Work',
     component: PersonalProjectsComponent,
   },
   {
@@ -23,12 +23,12 @@ const routes: Routes = [
   },
   {
     path: 'work/samedi',
-    title: 'samedi',
+    title: 'Samedi',
     component: SamediComponent,
   },
   {
     path: 'work/cheiron',
-    title: 'cheiron',
+    title: 'Cheiron',
     component: CheironComponent,
   },
   {
@@ -38,17 +38,17 @@ const routes: Routes = [
   },
   {
     path: 'work/ombres-et-lumieres',
-    title: 'ombres-et-lumieres',
+    title: 'الظلال والأضواء',
     component: OmbresEtLumieresComponent,
   },
   {
     path: 'work/portraits',
-    title: 'portraits',
+    title: 'Portraits',
     component: PortraitsComponent,
   },
   {
     path: '',
-    title: 'by 4mbianss',
+    title: 'Ambiance - Work',
     component: HomepageComponent,
   },
   { path: '**', component: PersonalProjectsComponent },
