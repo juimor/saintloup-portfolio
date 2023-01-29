@@ -14,15 +14,16 @@ export class PersonalProjectsComponent {
   projectsMenuItems = projectsMenuItems;
   gridColoumns = 2;
   fullscreenStyle: string;
-  semiStyle: string;
+  divStyle: string;
 
   setBackgroundStyle(item: MenuItem) {
     if (!!item.style && !!item.style.css) {
-      item.style.fullscreen ? this.fullscreenStyle = item.style.css : this.semiStyle = item.style.css
+      item.style.fullscreen ? this.fullscreenStyle = item.style.css : this.divStyle = item.style.css
     }
   }
+
   resetBackgroundStyle() {
     this.fullscreenStyle = '';
-    this.semiStyle = '';
+    this.divStyle = '';
   }
 }
