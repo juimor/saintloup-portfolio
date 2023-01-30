@@ -14,14 +14,15 @@ export class TroisSixCinqComponent{
   backgroundImgUrl: string = '';
   gridColumns = 2;
   daySelected: string = 'nothingSelected';
-  weekItemSelected: any;
+  weekItemSelecteds: any[] = [];
 
+  ngOnInit() {
+    this.imagesService.itemsUrls$.subscribe(data => {this.weekItemSelecteds = data});
+  }
 
   weekItemClickAction($event: string) {
     this.daySelected = $event.toUpperCase();
-    this.imagesService.listAllImages(this.daySelected).then(() => {
-      this.weekItemSelected = this.imagesService.itemsUrls;
-    });
+    this.imagesService.listAllImages(this.daySelected);
   }
 
   onMouseOver(item:any) {

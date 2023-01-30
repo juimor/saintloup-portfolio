@@ -6,11 +6,8 @@
     ></app-navbar>
     <div class="image-content-container center-content">
       <div *ngIf="daySelected != 'nothingSelected'">
-        <div
-          class="image-container center-content"
-          *ngIf="!imagesService.loading"
-        >
-          <ng-container *ngFor="let item of weekItemSelected">
+        <div class="image-container center-content">
+          <ng-container *ngFor="let item of weekItemSelecteds">
             <img
               (mouseover)="onMouseOver(item)"
               (mouseout)="onMouseLeave()"
@@ -21,9 +18,11 @@
             />
           </ng-container>
         </div>
-        <div class="center-content" *ngIf="imagesService.loading">
+        <!-- LOADING -->
+        <!-- *ngIf="!imagesService.loading" -->
+        <!-- <div class="center-content" *ngIf="imagesService.loading">
           <img loading="lazy" src="/assets/loading.gif" height="50px" />
-        </div>
+        </div> -->
       </div>
       <div
         *ngIf="this.backgroundImgUrl != ''"

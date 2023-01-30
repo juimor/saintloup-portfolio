@@ -74,8 +74,8 @@ export const projectsMenuItems: MenuItem[] = [
     link: '/cheiron',
     title: 'cheiron',
     style: {
-      fullscreen: false,
-      css: 'background: url(/assets/menu/cheiron.webp); background-repeat: no-repeat; background-position: center; background-size: 90%;'
+      fullscreen: true,
+      css: 'background: url(/assets/menu/cheiron.webp); background-repeat: no-repeat; background-position: right; background-size: 80%;'
     }
   },
   { 
