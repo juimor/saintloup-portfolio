@@ -7,13 +7,13 @@
     <div class="image-content-container center-content">
       <div *ngIf="daySelected != 'nothingSelected'">
         <div class="image-container center-content">
-          <ng-container *ngFor="let item of weekItemSelecteds">
+          <ng-container *ngFor="let url of weekItemSelecteds">
             <img
-              (mouseover)="onMouseOver(item)"
+              (mouseover)="onMouseOver(url)"
               (mouseout)="onMouseLeave()"
               loading="lazy"
               class="image"
-              [src]="item"
+              [src]="url"
               height="100px"
             />
           </ng-container>

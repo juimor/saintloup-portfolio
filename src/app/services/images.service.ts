@@ -29,7 +29,6 @@ export class ImagesService {
       .catch((error) => {
         console.error(error);
       });
-      
     }
     this.loading = false;
   }

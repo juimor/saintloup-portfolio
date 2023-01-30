@@ -10,9 +10,7 @@ export class TroisSixCinqComponent{
 
   constructor(public imagesService: ImagesService) {}
 
-  test = document.getElementById('full-image');
   backgroundImgUrl: string = '';
-  gridColumns = 2;
   daySelected: string = 'nothingSelected';
   weekItemSelecteds: any[] = [];
 
@@ -25,8 +23,8 @@ export class TroisSixCinqComponent{
     this.imagesService.listAllImages(this.daySelected);
   }
 
-  onMouseOver(item:any) {
-    this.backgroundImgUrl = item;
+  onMouseOver(url:string) {
+    this.backgroundImgUrl = url;
   }
 
   onMouseLeave() {

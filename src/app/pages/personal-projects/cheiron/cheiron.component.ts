@@ -12,7 +12,7 @@ export class CheironComponent implements AfterViewInit {
   secondIndex: number = 0;
 
   ngAfterViewInit() {
-   this.findAProperName();
+   this.carousel();
   }
 
   nextImage(image: string) {
@@ -31,10 +31,10 @@ export class CheironComponent implements AfterViewInit {
     }
   }
 
-  findAProperName() {
+  carousel() {
     setTimeout(() => {
       this.nextImage('first');
-      this.findAProperName();
+      this.carousel();
     }, 3000);
   }
 }
